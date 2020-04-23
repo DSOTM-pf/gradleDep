@@ -1,41 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="anaLibrary:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8ebbcde4-368d-4ffe-b5c9-e179dfb22382" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/entry/Dependency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/entry/Repo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/AARUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/CommandUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/CsvUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/DependenciesUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/XmlUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/fileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/versions.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/anaLibrary/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/GradleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/SyncPipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/anaLibrary/utils/SyncPipe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/Zip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/csv.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/dictionary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/downLoad.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/manifestXML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/GradleCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Zip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/ZipUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/csv.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/dependency.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/dictionary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/downLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/DownloadUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/manifestXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/Config.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +102,7 @@
       <workItem from="1587608151566" duration="22096000" />
       <workItem from="1587643731354" duration="260000" />
       <workItem from="1587644204513" duration="1890000" />
-      <workItem from="1587646540555" duration="7796000" />
+      <workItem from="1587646540555" duration="8591000" />
     </task>
     <servers />
   </component>
