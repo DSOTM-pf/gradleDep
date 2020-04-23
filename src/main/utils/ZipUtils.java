@@ -1,56 +1,40 @@
-package utils;
+package main.utils;
+
+import main.entry.Dependency;
+import main.entry.Repo;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-public class Zip {
-    public static  ArrayList<String> aarPaths = new ArrayList<>();
-    public static String findAAR(String filePath)
-    {
-        aarPaths.clear();
-        File dir = new File(filePath);
-        File fileList[] = dir.listFiles();
-        allFileInPath(dir);
-        return aarPaths.get(0);
-    }
-    public static String allFileInPath(File file)
-    {
-        File[] fs = file.listFiles();
-        for(File f:fs){
-            if(f.isDirectory())	//若是目录，则递归打印该目录下的文件
-                allFileInPath(f);
-            if((f.isFile()) && (f.getName().endsWith(".aar")))		//若是文件，直接打印
-                aarPaths.add(f.getAbsolutePath());
-                return f.getAbsolutePath();
-                //System.out.println(f);
-        }
-        return  null;
-    }
+public class ZipUtils {
 
-    public static void reNameAAR(String filePath,String oldFileName,String newFileName)
-    {
-        String oldFilePath = filePath+"/"+oldFileName;
-        File oldFile = new File(oldFileName);
-        String newName = filePath + "/" + newFileName;
-        File newFile = new File(newFileName);
-        if (oldFile.exists() && oldFile.isFile()) {
-            oldFile.renameTo(newFile);
+    public void upZipAAR(Dependency dependency) throws IOException {
+        String zipPath = dependency.getAarPath();
+        String descDir = "";
+        String[] paths = dependency.getAarPath().split("\\\\");
+        for(int i = 0 ;i < paths.length-1 ; i++)
+        {
+            descDir += paths[i]+"\\";
         }
+        unZipFiles(new File(zipPath),descDir);
+//        dependency.setManifestPath(descDir+"\\null\\"+"AndroidManifest.xml");
+        System.out.println("******************解压完毕********************");
     }
     /**
      * 解压到指定目录
-     * @param zipPath 解压文件目录
-     * @param descDir 解压到的目录
      */
-    public static void unZipFiles(String zipPath, String descDir) throws IOException {
+    public  void unZipRepo(Repo repo) throws IOException {
+        String zipPath = repo.getRepoPath() + repo.getRepoName() + ".zip";
+        String descDir = repo.getRepoPath();
+
         unZipFiles(new File(zipPath), descDir);
+        System.out.println("******************解压完毕********************");
     }
 
     /**
@@ -61,9 +45,16 @@ public class Zip {
      */
     @SuppressWarnings("rawtypes")
     public static void unZipFiles(File zipFile, String descDir) throws IOException {
-
-        ZipFile zip = new ZipFile(zipFile, Charset.forName("GBK"));//解决中文文件夹乱码
-        String name = zip.getName().substring(zip.getName().lastIndexOf('\\')+1, zip.getName().lastIndexOf('.'));
+        ZipFile zip = null;
+        String name = null;
+        try {
+           zip = new ZipFile(zipFile, Charset.forName("GBK"));//解决中文文件夹乱
+           name = zip.getName().substring(zip.getName().lastIndexOf('\\')+1, zip.getName().lastIndexOf('.'));
+        }
+        catch (Exception e)
+        {
+            return;
+        }
 
         File pathFile = new File(descDir+name);
         if (!pathFile.exists()) {
@@ -97,7 +88,7 @@ public class Zip {
             in.close();
             out.close();
         }
-        System.out.println("******************解压完毕********************");
+
         return;
     }
 }

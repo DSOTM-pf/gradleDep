@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ebbcde4-368d-4ffe-b5c9-e179dfb22382" name="Default Changelist" comment="" />
+    <list default="true" id="8ebbcde4-368d-4ffe-b5c9-e179dfb22382" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/entry/Dependency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/entry/Repo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/AARUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/CommandUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/CsvUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/DependenciesUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/XmlUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/utils/fileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/versions.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/anaLibrary/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/GradleCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/SyncPipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/anaLibrary/utils/SyncPipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/Zip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/csv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/dictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/downLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/anaLibrary/utils/manifestXML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/GradleCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Zip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/ZipUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/csv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/dependency.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/dictionary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/downLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/DownloadUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/manifestXML.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,20 +50,29 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1aWveNab4Qx98PkkBoXVtUhW5E7" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resource" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\anaLibrary" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\anaLibrary" />
     </key>
   </component>
@@ -46,7 +90,7 @@
   </component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.main" />
       <module name="anaLibrary" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,29 +126,44 @@
       <workItem from="1587551577587" duration="5482000" />
       <workItem from="1587566773585" duration="1603000" />
       <workItem from="1587568426463" duration="3000" />
+      <workItem from="1587608151566" duration="22096000" />
+      <workItem from="1587643731354" duration="260000" />
+      <workItem from="1587644204513" duration="1890000" />
+      <workItem from="1587646540555" duration="7796000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/main.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/utils/Zip.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/utils/Zip.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/main/main.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,19 +1,33 @@
-package utils;
+package main.utils;
+
+import main.entry.Repo;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-//下载项目（不大可行？）
+public class DownloadUtils {
+    public boolean downLoadGradleRepo(Repo repo)
+    {
+        try {
+            downGradleRepo(repo.getDownLoadUrl(), repo.getRepoPath(), "GET", repo.getRepoName()+".zip");
+            System.out.println("******************下载完毕********************");
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
 
-public class downLoad {
     /**
      * @param url   下载地址
      * @param filePath  保存文件 的路径
      * @param method    post/get
      * @return
      */
-    public boolean downGradleRepo(String url,String filePath,String method,String fileName)
+    private boolean downGradleRepo(String url,String filePath,String method,String fileName)
     {
         //https://github.com/aminecmi/ReaderforSelfoss/archive/master.zip
         //System.out.println("fileName---->"+filePath);
